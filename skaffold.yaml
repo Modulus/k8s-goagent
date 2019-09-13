@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1beta13
+kind: Config
+build:
+  artifacts:
+  - image: coderpews/k8s-agent
+deploy:
+  kubectl:
+    manifests:
+    - manifests/deployment.yaml
+    - manifests/service-account.yaml
+    - manifests/cluster-role-binding.yaml
+    - manifests/cluster-role.yaml    
