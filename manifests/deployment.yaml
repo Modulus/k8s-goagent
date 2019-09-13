@@ -13,6 +13,7 @@ spec:
       labels:
         app: k8s-agent
     spec:
+      serviceAccountName: k8s-agent-viewer
       containers:
       - name: myapp
         image: coderpews/k8s-agent
