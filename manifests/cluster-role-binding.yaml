@@ -8,5 +8,5 @@ subjects:
   namespace: kube-system
 roleRef:
   kind: ClusterRole
-  name: k8s-agent-viewer-cluster-role
+  name: view
   apiGroup: rbac.authorization.k8s.io
