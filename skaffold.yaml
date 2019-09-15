@@ -7,6 +7,5 @@ deploy:
   kubectl:
     manifests:
     - manifests/cluster-role-binding.yaml
-    - manifests/cluster-role.yaml
     - manifests/deployment.yaml
     - manifests/service-account.yaml
